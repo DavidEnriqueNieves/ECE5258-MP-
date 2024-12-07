@@ -308,7 +308,6 @@ def rbf_transform(input_x: np.array, radialize_xs: np.array, s: float) -> np.arr
     assert not np.isnan(transformed_xs).any(), "NaN values in X_new"
     return transformed_xs
 
-
 def task4b(Splits, C, rbf_matrix_map):
     D = rbf_matrix_map[Splits.TRAIN][0].shape[0] - 1
     print(f"D is {D}")
